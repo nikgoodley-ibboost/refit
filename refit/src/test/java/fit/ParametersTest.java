@@ -105,7 +105,7 @@ public class ParametersTest extends TestCase {
 
 	private void assertParseException(String expectedErrorMessage, String[] args) throws CommandLineException {
 		try {
-			Parameters p = new Parameters(args);
+			new Parameters(args);
 			fail("expected exception");
 		}
 		catch (CommandLineParseException e) {

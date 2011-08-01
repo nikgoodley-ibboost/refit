@@ -61,7 +61,8 @@ public class Equals extends PrimitiveFixture {
         return super.parse(s, type);
     }
 
-    Boolean parseCustomBoolean(String s) {
+    @SuppressWarnings("unused")
+	Boolean parseCustomBoolean(String s) {
         if (true) throw new RuntimeException("boolean");
         return
             s.startsWith("y") ?         Boolean.TRUE :
